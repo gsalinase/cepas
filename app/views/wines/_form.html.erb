@@ -1,0 +1,33 @@
+<%= form_with(model: wine, local: true) do |form| %>
+<% if wine.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(wine.errors.count, "error") %> prohibited this wine from being saved:</h2>
+
+  <ul>
+    <% wine.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+<%= form.fields_for :assemblies do |assemblies_form| %>
+<ul>
+      <li>
+        <%= assemblies_form.label ' ' %>
+        <%= assemblies_form.check_box :strain_id %>
+      </li>
+      <li>
+        <%= assemblies_form.text_field :percentage %>
+      </li>
+</ul>
+<% end %>
+
+<div class="field">
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+</div>
+
+<div class="actions">
+  <%= form.submit %>
+</div>
+<% end %>

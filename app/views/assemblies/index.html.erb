@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Ensamblajes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Vino</th>
+      <th>Cepa</th>
+      <th>Porcentaje</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @assemblies.each do |assembly| %>
+      <tr>
+        <td><%= assembly.wine.name %></td>
+        <td><%= assembly.strain.name %></td>
+        <td><%= assembly.percentage %></td>
+        <td><%= link_to 'Ver', assembly %></td>
+        <td><%= link_to 'Editar', edit_assembly_path(assembly) %></td>
+        <td><%= link_to 'Eliminar', assembly, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Agregar ensamblaje', new_assembly_path %>
