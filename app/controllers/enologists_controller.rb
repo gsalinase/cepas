@@ -1,4 +1,5 @@
 class EnologistsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_enologist, only: [:show, :edit, :update, :destroy]
 
   # GET /enologists

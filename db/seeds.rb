@@ -24,3 +24,7 @@ Position.create(name: 'Reviewer')
 # Contract
 Contract.create(enologist_id: 1, magazine_id: 1, position_id: 3)
 Contract.create(enologist_id: 1, magazine_id: 1, position_id: 2)
+
+# User
+User.create(email: 'peter@gmail.com', password: '123456', admin: true)
+User.create(email: 'carlitos@gmail.com', password: '123456', admin: false)
