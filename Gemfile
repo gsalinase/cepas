@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.0.3', '>= 6.0.3.5'
+gem 'rails', '~> 6.0.3', '>= 6.0.3.7'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: :development
 gem 'pg', group: :production
@@ -34,7 +34,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 # Boostrap
-gem 'bootstrap', '~> 4.5.0'
+gem 'bootstrap', '~> 4.5.3'
 # Gemfile
 gem 'jquery-rails', '>= 4.4.0'
 
@@ -42,7 +42,7 @@ gem 'jquery-rails', '>= 4.4.0'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 # Devise
-gem 'devise', '>= 4.7.1'
+gem 'devise', '>= 4.7.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -65,8 +65,8 @@ group :test do
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper', '>= 2.1.1'
 
-  gem 'rspec-rails', '>= 4.0.1'
-  gem 'rails-controller-testing', '>= 1.0.4'
+  gem 'rspec-rails', '>= 4.0.2'
+  gem 'rails-controller-testing', '>= 1.0.5'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
