@@ -34,7 +34,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 # Boostrap
-gem 'bootstrap', '~> 4.5.0'
+gem 'bootstrap', '~> 4.5.3'
 # Gemfile
 gem 'jquery-rails', '>= 4.4.0'
 
@@ -42,7 +42,7 @@ gem 'jquery-rails', '>= 4.4.0'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 # Devise
-gem 'devise', '>= 4.7.1'
+gem 'devise', '>= 4.7.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -60,13 +60,13 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 3.32.2'
+  gem 'capybara', '>= 3.34.0'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper', '>= 2.1.1'
 
-  gem 'rspec-rails', '>= 4.0.1'
-  gem 'rails-controller-testing', '>= 1.0.4'
+  gem 'rspec-rails', '>= 4.0.2'
+  gem 'rails-controller-testing', '>= 1.0.5'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
